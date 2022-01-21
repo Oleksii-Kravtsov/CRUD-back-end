@@ -1,0 +1,23 @@
+{
+  "name": "crud-back-end",
+  "version": "1.0.0",
+  "description": "back end stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleksii-Kravtsov/CRUD-back-end.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oleksii-Kravtsov/CRUD-back-end/issues"
+  },
+  "homepage": "https://github.com/Oleksii-Kravtsov/CRUD-back-end#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "pg": "^8.7.1"
+  }
+}
