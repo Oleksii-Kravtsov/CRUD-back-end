@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Oleksii-Kravtsov/CRUD-back-end#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "express": "^4.17.2",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
