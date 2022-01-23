@@ -11,10 +11,10 @@ const {Sequelize, Op, Model, DataTypes} = require('sequelize')
 
 //parameters for sequelize to connect to database
 const sequelize = new Sequelize({
-    database : 'school_storage',
-    username : 'me',
-    password : 'password',
-    host : 'localhost',
+    database : 'd4cj3llp2kjtq7',
+    username : 'uivkuqxsinsagi',
+    password : 'e139206c3c24aca01e17f3b577de918393bd10ace56cbf8bd00525bcb896ce8f',
+    host : 'ec2-3-224-157-224.compute-1.amazonaws.com',
     dialect : 'postgres',
     storage : './database.postgres',
     port: 5432,
