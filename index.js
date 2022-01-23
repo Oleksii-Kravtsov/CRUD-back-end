@@ -18,7 +18,7 @@ const sequelize = new Sequelize({
     dialect : 'postgres',
     storage : './database.postgres',
     port: 5432,
-    ssl: true,
+    native : true
 })
 
 //checks if the sequelize was connected to the database
