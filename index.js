@@ -82,6 +82,8 @@ const Students = sequelize.define('students',
                                 }
                                 })
 
+
+sequelize.sync()
 //route for the home page
 app.get("/", (req, res) => {
     res.send("nothing here")
