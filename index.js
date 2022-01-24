@@ -89,12 +89,16 @@ app.get("/", (req, res) => {
 
 //route for all campuses
 app.get('/campuses', function(req, res) {
-    Campuses.findAll().then(campuses => res.json(campuses))
+    Campuses.findAll().then(campuses => res.json(campuses)).catch(function(err) {
+        console.log("this sucks")
+    })
 })
 
 //route for all students
 app.get('/students', function(req, res) {
-    Students.findAll().then(students => res.json(students))
+    Students.findAll().then(students => res.json(students)).catch(function(err) {
+        console.log("this sucks")
+    })
 })
 
 //create new student through the post request
