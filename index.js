@@ -3,7 +3,7 @@ const { response } = require('express')
 const { options } = require('pg/lib/defaults')
 const bodyParser = require('body-parser')
 const app = express()
-const port = process.env.PORT | 3000
+const port = process.env.PORT || 3000
 app.use(bodyParser.json())
 app.listen(port, () => console.log(`the app is listening on port ${port}!`))
 
