@@ -2,9 +2,11 @@ const express = require('express')
 const { response } = require('express')
 const { options } = require('pg/lib/defaults')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const app = express()
 const port = process.env.PORT || 3000
 app.use(bodyParser.json())
+app.use(cors())
 app.listen(port, () => console.log(`the app is listening on port ${port}!`))
 
 const {Sequelize, Op, Model, DataTypes} = require('sequelize')
@@ -92,14 +94,16 @@ app.get("/", (req, res) => {
 //route for all campuses
 app.get('/campuses', function(req, res) {
     Campuses.findAll().then(campuses => res.json(campuses)).catch(function(err) {
-        console.log("this sucks")
+        console.log(err)
+        res.send(err)
     })
 })
 
 //route for all students
 app.get('/students', function(req, res) {
     Students.findAll().then(students => res.json(students)).catch(function(err) {
-        console.log("this sucks")
+        console.log(err)
+        res.send(err)
     })
 })
 
